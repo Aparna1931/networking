@@ -71,7 +71,7 @@ resource "aws_security_group" "web_sg" {
 }
 
 resource "aws_instance" "web" {
-  ami                    = "ami-05d3e0186c058c4dd" 
+  ami                    = "ami-0c29ae3c88c3732a9" 
   instance_type          = "t2.micro"
   subnet_id              = data.aws_subnet.default.id
   key_name               = aws_key_pair.generated_key.key_name
