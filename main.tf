@@ -34,7 +34,7 @@ data "aws_subnet" "default" {
     values = [data.aws_vpc.default.id]
   }
 
-  availability_zone = "eu-north-1a"
+  availability_zone = "eu-central-1a"
 }
 
 resource "aws_security_group" "web_sg" {
